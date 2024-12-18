@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Slide Navbar</title>
+    <link rel="stylesheet" type="text/css" href="slide navbar style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap" rel="stylesheet">
+    <link href="css/login.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="images/logo.png" type="" />
+    <style>
+        .form-container {
+            max-height: 400px;
+            /* Adjust the height as needed */
+            overflow-y: scroll;
+            scrollbar-width: none;
+            /* For Firefox */
+            -ms-overflow-style: none;
+            /* For Internet Explorer and Edge */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <input type="checkbox" id="chk" aria-hidden="true">
+
+        <div class="signup">
+            <div class="form-container">
+                <form>
+                    <label for="chk" aria-hidden="true">Sign up</label>
+                    <input type="text" name="txt" placeholder="No. Reg" required>
+                    <input type="text" name="txt" placeholder="Nama" required>
+                    <input type="text" name="txt" placeholder="User name" required>
+                    <input type="password" name="pswd" placeholder="Password" required>
+                    <select name="sabuk" required>
+                        <option value="" disabled selected>Pilih Sabuk</option>
+                        <option value="putih">Putih</option>
+                        <option value="kuning">Kuning</option>
+                        <option value="hijau">Hijau</option>
+                        <option value="biru">Biru</option>
+                        <option value="merah">Merah</option>
+                        <option value="hitam">Hitam</option>
+                    </select>
+                    <button>Sign up</button>
+                    <br><br><br>
+                </form>
+            </div>
+        </div>
+        <div class="login">
+            <form>
+                <label for="chk" aria-hidden="true">Login</label>
+                <input type="email" name="email" placeholder="Email" required="">
+                <input type="password" name="pswd" placeholder="Password" required="">
+                <button>Login</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
